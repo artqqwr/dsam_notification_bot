@@ -1,0 +1,9 @@
+{% if events %}
+<b>Список мероприятий: </b>
+{% for i, event in zip(range(1, events|length + 1), events)%}
+<b>{{ i }})</b> {{event.name}}
+<i>{{ date_to_str(event.date) }}</i>
+{% endfor %}
+Выбери мероприятие (или /cancel): 
+{% else %} Список мероприятий пуст.
+{% endif %}

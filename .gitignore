@@ -1,0 +1,5 @@
+.env
+venv
+uploads
+database.db
+__pycache__
