@@ -184,7 +184,7 @@ async def hanlde_reply(update: Update, context: CallbackContext):
 
     if text == keyboards.ADMIN_MENU[0][0].text:
         access_key = models.Key.create()
-        url = f'https://t.me/share/url?url=https%3A%2F%2Ft.me%2Fdsam_notification_bot%3Ftext%3D%2Fadmin%2520{access_key.uuid}'
+        url = f'https://t.me/share/url?url=https%3A%2F%2Ft.me%2F{config.BOT_NAME}%3Ftext%3D%2Fadmin%2520{access_key.uuid}'
         share_button = InlineKeyboardButton(
             text="Поделиться",
             url=url,
