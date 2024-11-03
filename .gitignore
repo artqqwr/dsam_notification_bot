@@ -1,5 +1,5 @@
 .env
 venv
 uploads
-database.db
+db/
 __pycache__

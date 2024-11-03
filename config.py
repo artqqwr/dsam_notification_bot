@@ -3,8 +3,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TOKEN = getenv('TOKEN')
+BOT_NAME = getenv("BOT_NAME")
 
-DATABASE_DSN = './database.db'
+
+DATABASE_DSN = './db/database.db'
 ROOT_USERS_ID = getenv('ROOT_USERS_ID').split(',')
 
 IS_DEBUG = True
