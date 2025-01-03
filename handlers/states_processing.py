@@ -90,7 +90,7 @@ async def select_event(update: Update, context: CallbackContext):
 
 
 async def add_event(update: Update, context: CallbackContext):
-    text = escape_markdown(update.message.text)
+    text = update.message.text_html
     data = text.strip().split('\n')
 
     if len(data) <= 1:
